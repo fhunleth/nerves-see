@@ -1,11 +1,13 @@
 # Simple Execution Environment (SEE) in Nerves
 
 This example shows how to build a Nerves firmware image that runs a SEE test
-application from Joe Armstrong's Programming Erlang 2nd Edition book. SEE
+application from [Joe Armstrong's Programming Erlang 2nd Edition](http://pragprog.com/book/jaerlang2/programming-erlang). SEE
 doesn't load OTP or any of the normal Erlang modules. As a result, this is
 about the smallest and fastest loading image that you can build with Nerves.
+Bootloader and Linux overhead are painfully obvious in these images.
 
-To build, download and build the `nerves-sdk` first. Then run the following:
+To build, download and build the `nerves-sdk` first. See https://github.com/nerves-project/nerves-sdk.
+Then run the following:
 
 ```shell
 $ source ../nerves-sdk/nerves-env.sh
